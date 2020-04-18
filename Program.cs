@@ -3,6 +3,7 @@
     using System;
     using System.Collections;
     using System.Collections.Generic;
+    using FuncWithStrategy;
 
     class Option<T> : IEnumerable<T>
     {
@@ -43,7 +44,8 @@
             test = Option<string>.Some("Gaurab");
             test.PerformAction(item => Console.WriteLine($"I am {item}"));
 
-            Console.WriteLine("Hello World!");
+            long sum = ControlDigitAlgorithms.ForLowest(1234); // Using Static Factory Method
+            Console.WriteLine($"Hello World! I am sum {sum}");
         }
     }
 }
