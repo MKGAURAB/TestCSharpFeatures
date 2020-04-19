@@ -13,6 +13,8 @@
     <Compile Remove="BridgePattern\Core\VectorRenderer.cs" />
     <Compile Remove="BridgePattern\Core\Line.cs" />
     <Compile Remove="BridgePattern\Core\NonvectorRenderer.cs" />
+    <Compile Remove="ProxyPattern\**" />
+    <Compile Remove="BridgePattern\**" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="BridgePattern\Contract\obj\Contract.csproj.nuget.cache" />
@@ -46,5 +48,11 @@
     <None Remove="BridgePattern\Core\obj\Core.csproj.nuget.g.props" />
     <None Remove="BridgePattern\Core\obj\Debug\netcoreapp3.1\Core.assets.cache" />
     <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.csprojAssemblyReference.cache" />
+    <None Remove="ProxyPattern\**" />
+    <None Remove="BridgePattern\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="ProxyPattern\**" />
+    <EmbeddedResource Remove="BridgePattern\**" />
   </ItemGroup>
 </Project>
