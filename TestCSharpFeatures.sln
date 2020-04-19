@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptionType", "OptionType.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgePattern", "BridgePattern\BridgePattern.csproj", "{F849AA98-6994-434A-B3FD-E9D5FC28A4B3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural Patterns", "Structural Patterns", "{4CAB3E47-05CD-4359-ADA6-6F5662DE62B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {08E3B823-E8AA-4E56-9EDB-5BBB4885C179}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F849AA98-6994-434A-B3FD-E9D5FC28A4B3} = {4CAB3E47-05CD-4359-ADA6-6F5662DE62B7}
 	EndGlobalSection
 EndGlobal
