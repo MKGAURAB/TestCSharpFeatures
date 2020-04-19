@@ -1,7 +1,7 @@
-﻿using Contract;
-
-namespace Core
+﻿namespace Core
 {
+    using Contract;
+
     public class Line : Shape
     {
         public Line(IRenderer rendered, string color) : base(rendered)

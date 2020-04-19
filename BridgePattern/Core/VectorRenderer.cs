@@ -1,8 +1,8 @@
-﻿using System;
-using Contract;
-
-namespace Core
+﻿namespace Core
 {
+    using System;
+    using Contract;
+
     public class VectorRenderer : IRenderer
     {
         public void Render(string shapeName, string color)

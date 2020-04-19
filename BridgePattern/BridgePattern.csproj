@@ -5,4 +5,24 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Contract\**" />
+    <Compile Remove="Core\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Contract\**" />
+    <EmbeddedResource Remove="Core\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Contract\**" />
+    <None Remove="Core\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Contract\Contract.csproj" />
+    <ProjectReference Include="Core\Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace ProxyPattern
+﻿namespace ProxyPattern
 {
-    class Program
+    using System;
+
+    static class Program
     {
         static void Main(string[] args)
         {

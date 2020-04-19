@@ -1,8 +1,8 @@
-﻿using Contract;
-using Core;
-
-namespace BridgePattern
+﻿namespace BridgePattern
 {
+    using Contract;
+    using Core;
+
     class Program
     {
         static void Main(string[] args)

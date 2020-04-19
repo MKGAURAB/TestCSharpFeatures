@@ -1,13 +1,12 @@
-﻿using System;
-namespace Contract
+﻿namespace Contract
 {
     public abstract class Shape
     {
-        protected IRenderer Renderer;
+        protected readonly IRenderer Renderer;
 
-        public string Color;
+        protected string Color;
 
-        public Shape(IRenderer rendered)
+        protected Shape(IRenderer rendered)
         {
             Renderer = rendered;
         }

@@ -1,5 +1,4 @@
-﻿using System;
-namespace Contract
+﻿namespace Contract
 {
     public interface IRenderer
     {

@@ -1,5 +1,4 @@
-﻿using System;
-namespace ProxyPattern
+﻿namespace ProxyPattern
 {
     public interface ICalculator
     {

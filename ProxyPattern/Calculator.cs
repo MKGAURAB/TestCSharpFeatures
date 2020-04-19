@@ -1,6 +1,7 @@
-﻿using System;
-namespace ProxyPattern
+﻿namespace ProxyPattern
 {
+    using System;
+
     public class Calculator : ICalculator
     {
         public Calculator()
