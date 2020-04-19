@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Contract;
+using Core;
 
 namespace BridgePattern
 {
@@ -6,7 +7,16 @@ namespace BridgePattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            VectorRenderer vr = new VectorRenderer();
+            NonvectorRenderer nvr = new NonvectorRenderer();
+
+            Shape sline = new Line(vr, "RED");
+
+            sline.DrawShape();
+
+            sline = new Line(nvr, "Green");
+
+            sline.DrawShape();
         }
     }
 }
