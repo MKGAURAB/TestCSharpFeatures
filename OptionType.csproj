@@ -5,4 +5,46 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="BridgePattern\Contract\IRendered.cs" />
+    <Compile Remove="BridgePattern\Program.cs" />
+    <Compile Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.AssemblyInfo.cs" />
+    <Compile Remove="BridgePattern\Contract\Shape.cs" />
+    <Compile Remove="BridgePattern\Core\VectorRenderer.cs" />
+    <Compile Remove="BridgePattern\Core\Line.cs" />
+    <Compile Remove="BridgePattern\Core\NonvectorRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="BridgePattern\Contract\obj\Contract.csproj.nuget.cache" />
+    <None Remove="BridgePattern\bin\Debug\netcoreapp3.1\BridgePattern.deps.json" />
+    <None Remove="BridgePattern\bin\Debug\netcoreapp3.1\BridgePattern.runtimeconfig.dev.json" />
+    <None Remove="BridgePattern\bin\Debug\netcoreapp3.1\BridgePattern.runtimeconfig.json" />
+    <None Remove="BridgePattern\bin\Debug\netcoreapp3.1\BridgePattern.dll" />
+    <None Remove="BridgePattern\bin\Debug\netcoreapp3.1\BridgePattern.pdb" />
+    <None Remove="BridgePattern\obj\BridgePattern.csproj.nuget.g.props" />
+    <None Remove="BridgePattern\obj\BridgePattern.csproj.nuget.cache" />
+    <None Remove="BridgePattern\obj\BridgePattern.csproj.nuget.dgspec.json" />
+    <None Remove="BridgePattern\obj\project.assets.json" />
+    <None Remove="BridgePattern\obj\BridgePattern.csproj.nuget.g.targets" />
+    <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.genruntimeconfig.cache" />
+    <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.csproj.CoreCompileInputs.cache" />
+    <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.AssemblyInfoInputs.cache" />
+    <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.assets.cache" />
+    <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.dll" />
+    <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.csproj.FileListAbsolute.txt" />
+    <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.pdb" />
+    <None Remove="BridgePattern\Contract\obj\Contract.csproj.nuget.g.props" />
+    <None Remove="BridgePattern\Contract\obj\Contract.csproj.nuget.g.targets" />
+    <None Remove="BridgePattern\Contract\obj\Contract.csproj.nuget.dgspec.json" />
+    <None Remove="BridgePattern\Contract\obj\project.assets.json" />
+    <None Remove="BridgePattern\Contract\obj\Debug\netcoreapp3.1\Contract.assets.cache" />
+    <None Remove="BridgePattern\Contract\obj\Debug\netcoreapp3.1\Contract.csprojAssemblyReference.cache" />
+    <None Remove="BridgePattern\Core\obj\Core.csproj.nuget.g.targets" />
+    <None Remove="BridgePattern\Core\obj\Core.csproj.nuget.cache" />
+    <None Remove="BridgePattern\Core\obj\project.assets.json" />
+    <None Remove="BridgePattern\Core\obj\Core.csproj.nuget.dgspec.json" />
+    <None Remove="BridgePattern\Core\obj\Core.csproj.nuget.g.props" />
+    <None Remove="BridgePattern\Core\obj\Debug\netcoreapp3.1\Core.assets.cache" />
+    <None Remove="BridgePattern\obj\Debug\netcoreapp3.1\BridgePattern.csprojAssemblyReference.cache" />
+  </ItemGroup>
 </Project>
