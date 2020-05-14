@@ -5,7 +5,7 @@
     using System.Collections.Generic;
     using FuncWithStrategy;
 
-    class Option<T> : IEnumerable<T>
+    internal class Option<T> : IEnumerable<T>
     {
         private IEnumerable<T> Content { get; }
 
@@ -22,7 +22,7 @@
         IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
     }
 
-    static class EnumerableExtensions
+    internal static class EnumerableExtensions
     {
         public static void PerformAction<T>(this IEnumerable<T> sequence, Action<T> action)
         {
@@ -33,19 +33,17 @@
         }
     }
 
-    static class Program
+    internal static class Program
     {
         static void Main(string[] args)
         {
-            Option<string> test;
-
-            test = Option<string>.None();
+            var test = Option<string>.None();
             test.PerformAction(item => Console.WriteLine($"I am {item}"));
 
             test = Option<string>.Some("Gaurab");
             test.PerformAction(item => Console.WriteLine($"I am {item}"));
 
-            long sum = ControlDigitAlgorithms.ForLowest(1234); // Using Static Factory Method
+            var sum = ControlDigitAlgorithms.ForLowest(1234); // Using Static Factory Method
             Console.WriteLine($"Hello World! I am sum {sum}");
         }
     }
